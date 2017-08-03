@@ -12,7 +12,16 @@ import { Hero } from './hero';
         <input [(ngModel)]="hero.name" placeholder="name"/>
       </div>
     </div>
-  `
+  `,
+  styles:[`
+    h2,label,input{
+      font-family: Helvetica;
+    }
+    label{
+      color: #aaa;
+      font-weight: bold;
+    }
+  `]
 })
 export class HeroDetailComponent {
   @Input() hero: Hero;
